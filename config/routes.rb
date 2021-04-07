@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :locations
+  resources :segments
+  resources :trips
   resources :maintenance_reports
   resources :vehicles
   resources :emergency_contacts
