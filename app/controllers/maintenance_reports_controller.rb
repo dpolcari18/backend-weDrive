@@ -1,0 +1,2 @@
+class MaintenanceReportsController < ApplicationController
+end
