@@ -14,7 +14,7 @@ gem 'puma', '~> 5.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
-gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.12'
 
 # Use JWT auth token encode / decode
 gem 'jwt'
@@ -23,6 +23,10 @@ gem 'jwt'
 gem 'rest-client'
 
 gem 'active_model_serializers'
+
+gem 'dotenv-rails'
+
+gem 'pry'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
