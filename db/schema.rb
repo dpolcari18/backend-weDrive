@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_07_165920) do
+ActiveRecord::Schema.define(version: 2021_04_09_180716) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -76,6 +76,7 @@ ActiveRecord::Schema.define(version: 2021_04_07_165920) do
     t.float "fuel_usage"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "trip_status", default: "Saved"
     t.index ["user_id"], name: "index_trips_on_user_id"
   end
 

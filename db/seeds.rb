@@ -28,3 +28,4 @@ location2 = Location.create(trip_id: trip.id, start_end: 'end', street: '', city
 
 segment1 = Segment.create(trip_id: trip.id, index_num: 0, instructions: 'Start out going east on W 2Nd St toward Colorado St.', icon_url: 'http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-start_sm.gif', distance: 0.067, time: 11, direction: 'East', turn_type: 0, map_url: 'http://www.mapquestapi.com/staticmap/v5/map?key=jGOGNEMHEi4MNjU7LSSVTTYOoozrHXRW&size=225,160&locations=30.264978408813477,-97.74659729003906|marker-1||30.264677047729492,-97.74552917480469|marker-2||&center=30.264827728271484,-97.74606323242188&defaultMarker=none&zoom=15&rand=1833180008&session=606de578-02da-6750-02b4-34a9-123d26405d5b', start_lat: 30.264978, start_long: -97.746597)
 
+
