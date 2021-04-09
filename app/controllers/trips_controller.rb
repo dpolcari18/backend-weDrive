@@ -12,6 +12,12 @@ class TripsController < ApplicationController
         end
     end
 
+    def show
+        trip = Trip.find_by(id: params[:id])
+
+        render json: { status: 'Success', trip: TripSerializer.new(trip)}
+    end
+
     def fetch
         route_res = get_route(params[:origin], params[:destination])
         render json: {route: route_res}

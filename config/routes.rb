@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :locations, only: [:create]
   resources :segments, only: [:create]
-  resources :trips, only: [:create]
+  resources :trips, only: [:create, :show]
   # resources :maintenance_reports
   # resources :vehicles
   # resources :emergency_contacts
