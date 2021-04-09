@@ -3,6 +3,7 @@ class UserSerializer < ActiveModel::Serializer
   
     has_many :emergency_contacts
     has_many :trips
+    has_many :locations, through: :trips
     has_many :vehicles
     has_many :maintenance_reports, through: :vehicles
   end
