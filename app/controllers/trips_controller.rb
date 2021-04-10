@@ -18,6 +18,13 @@ class TripsController < ApplicationController
         render json: { status: 'Success', trip: TripSerializer.new(trip)}
     end
 
+    def update
+        trip = Trip.find_by(id: params[:id])
+        trip.update(trip_params)
+
+        render json: { status: 'Success', trip: TripSerializer.new(trip)}
+    end
+
     def fetch
         route_res = get_route(params[:origin], params[:destination])
         render json: {route: route_res}
@@ -35,6 +42,6 @@ class TripsController < ApplicationController
     end
 
     def trip_params
-        params.require(:trip).permit(:user_id, :time, :real_time, :distance, :has_tolls, :fuel_usage)
+        params.require(:trip).permit(:id, :user_id, :time, :real_time, :distance, :has_tolls, :fuel_usage, :trip_status)
     end
 end
