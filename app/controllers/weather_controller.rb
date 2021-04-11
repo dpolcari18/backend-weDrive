@@ -9,7 +9,7 @@ class WeatherController < ApplicationController
     private
     def get_weather(city)
         key = ENV['WEATHER_API_KEY']
-        url = "http://api.openweathermap.org/data/2.5/weather?q=#{city}&appid=#{key}"
+        url = "http://api.openweathermap.org/data/2.5/weather?q=#{city}&units=imperial&appid=#{key}"
         
         weather_res = RestClient.get(url)
         
