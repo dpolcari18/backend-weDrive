@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   resources :sessions, only: [:create]
   get '/routes/:origin/:destination', to: 'trips#fetch'
   get '/weather/:city', to: 'weather#show'
+  get'/starttrip/:trip', to: 'mailer#start_trip'
+  get'/endtrip/:trip', to: 'mailer#end_trip'
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
