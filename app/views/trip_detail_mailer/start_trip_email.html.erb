@@ -4,15 +4,15 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <h1><%=@user.first_name %> <%= @user.last_name %> has Started a Trip!</h1>
+    <h1><%=@user.first_name %> <%= @user.last_name %> has started a trip!</h1>
     
-    <h2>Trip Details:</h2>
+    <h2>Trip Details</h2>
 
-    <h3>Origin: <%= @locations.find {|loc| loc.start_end == 'Start'}.street %></h3>
-    <h5>Start Time: <%= @trip.created_at %></h5>
+    <h3>Origin: <%= @locations.find {|loc| loc.start_end == 'Start'}.street %> <%= @locations.find {|loc| loc.start_end == 'Start'}.city %></h3>
+    <h5>Start Time: <%= @trip.created_at.strftime('%Y-%m-%d %H:%M') %></h5>
 
-    <h3>Destination: <%= @locations.find {|loc| loc.start_end == 'End'}.street %></h3>
-    <h5>Estimated Arrival Time: <%= @trip.real_time %></h5>
+    <h3>Destination: <%= @locations.find {|loc| loc.start_end == 'End'}.street %> <%= @locations.find {|loc| loc.start_end == 'End'}.city %></h3>
+    <h5>Estimated Arrival Time: <%= ((@trip.created_at)+(@trip.real_time)).strftime('%Y-%m-%d %H:%M') %></h5>
 
     <h2>Map:</h2>
 
@@ -23,5 +23,7 @@
             <li><img src=<%= segment.icon_url%> alt='trip instruction'/> <%= segment.instructions%> - <%= segment.distance.round(1)%> miles</li>
         <% end %>
     </ol>
+
+    <h5><a href='http://localhost:3001' target='_blank'>weDrive</a></h5>
   </body>
 </html>
