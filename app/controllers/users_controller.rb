@@ -9,7 +9,7 @@ class UsersController < ApplicationController
 
         # check to see if user_params pass validations
         if user.save
-            render json: { status: 'Success', msg: 'Thank you for signing up. Please sign in!' }
+            render json: { status: 'Success', msg: 'Thank you for signing up. Please sign in!', user_id: user.id }
         else
             render json: { status: 'Failed', msg: user.errors.full_messages }
         end

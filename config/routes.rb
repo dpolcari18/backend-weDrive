@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :trips, only: [:create, :show, :update]
   # resources :maintenance_reports
   # resources :vehicles
-  # resources :emergency_contacts
+  resources :emergency_contacts, only: [:create]
   resources :users, only: [:create, :show]
   resources :sessions, only: [:create]
   get '/routes/:origin/:destination', to: 'trips#fetch'
