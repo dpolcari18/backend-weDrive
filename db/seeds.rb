@@ -21,7 +21,7 @@ MaintenanceReport.create(vehicle_id: car.id, description: 'Tires', notes: 'Rotat
 MaintenanceReport.create(vehicle_id: car.id, description: 'Oil Change', notes: 'Replaced oil')
 MaintenanceReport.create(vehicle_id: car.id, description: 'Windshield Wipers', notes: 'Replaced wipers')
 
-trip = Trip.create(user_id: user.id, time: 10200, real_time: 10983, distance: 195.498, has_tolls: false, fuel_usage: 10.02)
+trip = Trip.create(user_id: user.id, time: 10200, real_time: 10983, distance: 195.498, has_tolls: false, fuel_usage: 10.02, map_url: "https://www.mapquestapi.com/staticmap/v5/map?start=Dallas&end=Austin&size=170,110@2x&key=jGOGNEMHEi4MNjU7LSSVTTYOoozrHXRW")
 
 location1 = Location.create(trip_id: trip.id, start_end: 'Start', street: '', city: 'Austin', county: 'Travis County', state: 'TX', zip_code: '', long: -97.746598, lat: 30.264979)
 location2 = Location.create(trip_id: trip.id, start_end: 'End', street: '', city: 'Dallas', county: 'Dallas County', state: 'TX', zip_code: '', long: -96.796215, lat: 32.777977)
