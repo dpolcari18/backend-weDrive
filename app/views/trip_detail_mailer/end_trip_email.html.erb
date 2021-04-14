@@ -7,7 +7,7 @@
     <h1><%= @user.first_name %> <%= @user.last_name %> has finished their trip!</h1>
     
     <p><%= @user.first_name %> arrived at their destination in <%=  @locations.find {|loc| loc.start_end == 'End'}.city %> safely.</p>
-    <p>Don't forget to use weDrive next time your driving!</p>
-    <h5><a href='http://localhost:3001' target='_blank'>weDrive</a></h5>
+    <p>Don't forget to use weDrive next time you're driving!</p>
+    <h5><a href='http://localhost:3001' target='_blank'><%= image_tag attachments['logo'].url %></a></h5>
   </body>
 </html>

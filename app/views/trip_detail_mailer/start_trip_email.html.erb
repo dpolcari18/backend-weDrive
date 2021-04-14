@@ -23,7 +23,7 @@
             <li><img src=<%= segment.icon_url%> alt='trip instruction'/> <%= segment.instructions%> - <%= segment.distance.round(1)%> miles</li>
         <% end %>
     </ol>
-
-    <h5><a href='http://localhost:3001' target='_blank'>weDrive</a></h5>
+    
+    <a href='http://localhost:3001' target='_blank'><%= image_tag attachments['logo'].url %></a>
   </body>
 </html>
