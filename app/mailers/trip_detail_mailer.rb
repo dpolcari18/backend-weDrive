@@ -1,3 +1,5 @@
+require 'rest-client'
+
 class TripDetailMailer < ApplicationMailer
     def start_trip_email
         @emergency_contact = params[:ec]

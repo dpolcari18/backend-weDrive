@@ -15,6 +15,7 @@
     <h5>Estimated Arrival Time: <%= ((@trip.created_at)+(@trip.real_time)).strftime('%Y-%m-%d %H:%M') %></h5>
 
     <h2>Map:</h2>
+    <%= image_tag @trip.map_url %>
 
     <h2>Route Details:</h2>
 
