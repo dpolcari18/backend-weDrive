@@ -4,6 +4,8 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
+    <a href='http://localhost:3001' target='_blank'><%= image_tag attachments['logo'].url %></a>
+
     <h1><%=@user.first_name %> <%= @user.last_name %> has started a trip!</h1>
     
     <h2>Trip Details</h2>
@@ -24,7 +26,5 @@
             <li><img src=<%= segment.icon_url%> alt='trip instruction'/> <%= segment.instructions%> - <%= segment.distance.round(1)%> miles</li>
         <% end %>
     </ol>
-    
-    <a href='http://localhost:3001' target='_blank'><%= image_tag attachments['logo'].url %></a>
   </body>
 </html>
