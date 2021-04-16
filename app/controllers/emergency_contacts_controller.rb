@@ -11,6 +11,13 @@ class EmergencyContactsController < ApplicationController
         end
     end
 
+    def update
+        emergency_contact = EmergencyContact.find_by(id: params[:id])
+        emergency_contact.update(emergency_contact_params)
+
+        render json: { status: 'Success'}
+    end
+
     private
 
     def emergency_contact_params

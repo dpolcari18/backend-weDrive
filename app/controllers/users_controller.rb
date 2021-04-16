@@ -19,6 +19,13 @@ class UsersController < ApplicationController
         render json: {user: UserSerializer.new(current_user)}
     end
 
+    def update
+        user = User.find_by(id: params[:id])
+        user.update(user_params)
+
+        render json: { status: 'Success' }
+    end
+
     private 
 
     def user_params
