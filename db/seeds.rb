@@ -17,9 +17,9 @@ EmergencyContact.create(user_id: user.id, first_name: 'Emily', last_name: 'Polca
 
 car = Vehicle.create(user_id: user.id, make: 'Mazda', model: 'CX-5', year: 2015, mileage: 70000)
 
-MaintenanceReport.create(vehicle_id: car.id, description: 'Tires', notes: 'Rotation')
-MaintenanceReport.create(vehicle_id: car.id, description: 'Oil Change', notes: 'Replaced oil')
-MaintenanceReport.create(vehicle_id: car.id, description: 'Windshield Wipers', notes: 'Replaced wipers')
+MaintenanceReport.create(vehicle_id: car.id, description: 'Tires', notes: 'Rotation', mileage: 54000)
+MaintenanceReport.create(vehicle_id: car.id, description: 'Oil Change', notes: 'Replaced oil', mileage: 60000)
+MaintenanceReport.create(vehicle_id: car.id, description: 'Windshield Wipers', notes: 'Replaced wipers', mileage: 61000)
 
 trip = Trip.create(user_id: user.id, time: 10200, real_time: 10983, distance: 195.498, has_tolls: false, fuel_usage: 10.02, map_url: "https://www.mapquestapi.com/staticmap/v5/map?start=Dallas&end=Austin&size=170,110@2x&key=jGOGNEMHEi4MNjU7LSSVTTYOoozrHXRW")
 
