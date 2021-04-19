@@ -10,6 +10,13 @@ class VehiclesController < ApplicationController
         end
     end
 
+    def update
+        vehicle = Vehicle.find_by(id: params[:id])
+        vehicle.update(vehicle_params)
+
+        render json: { status: 'Success', vehicle: VehicleSerializer.new(vehicle)}
+    end
+
     def destroy
         vehicle = Vehicle.find_by(id: params[:id])
         if vehicle.destroy
