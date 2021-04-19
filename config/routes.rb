@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :segments, only: [:create]
   resources :trips, only: [:create, :show, :update]
   # resources :maintenance_reports
-  # resources :vehicles
+  resources :vehicles, only: [:create]
   resources :emergency_contacts, only: [:create, :update]
   resources :users, only: [:create, :show, :update]
   resources :sessions, only: [:create]
