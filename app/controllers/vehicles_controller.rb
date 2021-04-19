@@ -10,6 +10,13 @@ class VehiclesController < ApplicationController
         end
     end
 
+    def destroy
+        vehicle = Vehicle.find_by(id: params[:id])
+        if vehicle.destroy
+            render json: { status: 'Success' }
+        end
+    end
+
     private
 
     def vehicle_params
