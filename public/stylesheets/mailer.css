@@ -1,5 +1,7 @@
 body {
     background-color: darkgrey;
+    display: flex;
+    justify-content: center;
 }
 
 #logo {
@@ -14,16 +16,27 @@ body {
     justify-content: center;
 }
 
-#trip-start {
+.trip-end {
     display: flex;
     justify-content: space-around;
     padding-top: 25px;
 }
 
-#trip-end {
+.trip-end-bottom {
     display: flex;
     justify-content: space-around;
     padding-bottom: 25px;
+}
+
+.trip-start {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+}
+
+.trip {
+    display: flex;
+    justify-content: space-around;
 }
 
 div#main {

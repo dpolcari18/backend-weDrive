@@ -7,10 +7,8 @@
   </head>
   <body>
     <div class='container' id='main'>
-      <div class='row'>
-        <div class='col' id='logo'>
-          <a href='http://localhost:3001' target='_blank'><%= image_tag attachments['logo'].url %></a>
-        </div>
+      <div id='logo'>        
+        <a href='http://localhost:3001' target='_blank'><%= image_tag attachments['logo'].url %></a>        
       </div>
 
       <div class='row'>
@@ -20,15 +18,23 @@
       </div>
       
       <div class='row'>
-        <div class='col' id='trip-start'>
+        <div class='col trip-start' >
           <div class='row'>Origin: <%= @locations.find {|loc| loc.start_end == 'Start'}.street %> <%= @locations.find {|loc| loc.start_end == 'Start'}.city %></div>
-          <h3>Destination: <%= @locations.find {|loc| loc.start_end == 'End'}.street %> <%= @locations.find {|loc| loc.start_end == 'End'}.city %></h3>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col trip'>
+          <div class='row'>Start Time: <%= @trip.created_at.strftime('%Y-%m-%d %H:%M') %></div>
         </div>
       </div>
       
       <div class='row'>
-        <div class='col' id='trip-end'>
-          <div class='row'>Start Time: <%= @trip.created_at.strftime('%Y-%m-%d %H:%M') %></div>
+        <div class='col trip-end'>
+          <h3>Destination: <%= @locations.find {|loc| loc.start_end == 'End'}.street %> <%= @locations.find {|loc| loc.start_end == 'End'}.city %></h3>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col trip-end-bottom'>
           <h3>Estimated Arrival Time: <%= ((@trip.created_at)+(@trip.real_time)).strftime('%Y-%m-%d %H:%M') %></h3>
         </div>
       </div>

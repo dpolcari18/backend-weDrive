@@ -28,6 +28,8 @@ gem 'dotenv-rails'
 
 gem 'pry'
 
+
+gem 'premailer-rails'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
