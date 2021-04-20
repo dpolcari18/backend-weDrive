@@ -1,0 +1,48 @@
+body {
+    background-color: darkgrey;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+#subject {
+    display: flex;
+    justify-content: center;
+}
+
+#trip-start {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+}
+
+#trip-end {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 25px;
+}
+
+div#main {
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin: 50px 13% 20px 13%;
+}
+
+#route-details {
+    display: flex;
+    justify-content: center;
+}
+
+#last-row {
+    padding-bottom: 25px;
+}
+
+#map {
+    display: flex;
+    align-content: flex-end;
+}
