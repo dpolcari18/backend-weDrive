@@ -11,7 +11,7 @@ Vehicle.destroy_all
 EmergencyContact.destroy_all
 User.destroy_all
 
-user = User.create(first_name: 'David', last_name: 'Polcari', email: 'david@email.com', phone: '555-555-5555', password: '123')
+user = User.create(first_name: 'David', last_name: 'Polcari', email: 'david@email.com', phone: '555-555-5555', password: 'password')
 
 EmergencyContact.create(user_id: user.id, first_name: 'Emily', last_name: 'Polcari', email: 'wedrivemod5@gmail.com', phone: '555-555-5555')
 

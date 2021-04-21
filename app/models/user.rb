@@ -9,4 +9,5 @@ class User < ApplicationRecord
 
     validates_presence_of :first_name, :last_name, :email, :phone, :password_digest
     validates :email, uniqueness: true
+    validates :password, presence: true, length: {minimum: 6}, on: :create
 end
