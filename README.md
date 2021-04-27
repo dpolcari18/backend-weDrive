@@ -34,11 +34,11 @@ Full Demo: https://youtu.be/9KVhCc_vHVg
 
 Starting a Trip:
 
-![Starting a trip](https://media.giphy.com/media/6qxMwUztXlgdUv91oB/giphy.gif)
+![Starting a trip](app/gifs/start-trip.gif)
 
 Weather and Vehicle Inspection:
 
-![Weather and inspection]()
+![Weather and inspection](app/gifs/weather-inspection.gif)
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
