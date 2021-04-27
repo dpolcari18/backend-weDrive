@@ -40,6 +40,10 @@ Weather and Vehicle Inspection:
 
 ![Weather and inspection](app/gifs/weather-inspection.gif)
 
+Routing and Emergency Contact Notification: 
+
+![Routing and Emergency Contact Notification](app/gifs/routing-notification.gif)
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
@@ -53,7 +57,7 @@ Things you may want to cover:
 
 * Database creation
 
-* Database initialization
+* Database initialization   
 
 * How to run the test suite
 
