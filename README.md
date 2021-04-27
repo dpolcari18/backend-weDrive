@@ -38,7 +38,7 @@ Starting a Trip:
 
 Weather and Vehicle Inspection:
 
-![Weather and inspection](https://media.giphy.com/media/0xfh1y6GrGvaBLcEga/giphy.gif)
+![Weather and inspection]()
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
