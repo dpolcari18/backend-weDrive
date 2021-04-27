@@ -28,8 +28,17 @@ Driving is the most dangerous thing most people do on a daily basis but it's als
 * Bcrypt for password hashing on backend
 
 ---
+## Demo
 
+Full Demo: https://youtu.be/9KVhCc_vHVg
 
+Starting a Trip:
+
+![Starting a trip](https://media.giphy.com/media/6qxMwUztXlgdUv91oB/giphy.gif)
+
+Weather and Vehicle Inspection:
+
+![Weather and inspection](https://media.giphy.com/media/0xfh1y6GrGvaBLcEga/giphy.gif)
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
