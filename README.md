@@ -32,7 +32,7 @@ Driving is the most dangerous thing most people do on a daily basis but it's als
 ---
 ## Demo
 
-<a href="https://youtu.be/LWJn98YZfJY">Full Demo</a>
+<a href="https://youtu.be/LWJn98YZfJY" target="_blank">Full Demo</a>
 
 Starting a Trip:
 
